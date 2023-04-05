@@ -2189,6 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 214ac6c89d07fab4094eb1dca098e6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 1577464900}
   playerButtonSprite: {fileID: 21300000, guid: bf73460ba12368e40be4e5d0b03bee23, type: 3}
   enemyButtonSprite: {fileID: 21300000, guid: bd36b1b7943ee2b44b17253345d24bb1, type: 3}
   button: {fileID: 347567879}
@@ -9096,6 +9097,7 @@ GameObject:
   - component: {fileID: 1577464897}
   - component: {fileID: 1577464899}
   - component: {fileID: 1577464898}
+  - component: {fileID: 1577464900}
   m_Layer: 5
   m_Name: ResourceShopPanel
   m_TagString: Shop
@@ -9126,8 +9128,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -86.274414}
-  m_SizeDelta: {x: -200, y: -172.54901}
+  m_AnchoredPosition: {x: 0, y: -1080}
+  m_SizeDelta: {x: -200, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577464898
 MonoBehaviour:
@@ -9167,6 +9169,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577464896}
   m_CullTransparentMesh: 1
+--- !u!95 &1577464900
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577464896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d3ab78a3f41870b41b44d2f68c2ad592, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1592572845
 GameObject:
   m_ObjectHideFlags: 0

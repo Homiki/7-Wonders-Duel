@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class ChangingButton : MonoBehaviour
 {
+    public Animator shopTransition;
+    public Animator playerPanelTransition;
+    public Animator enemyPanelTransition;
+
     public Sprite playerButtonSprite;
     public Sprite enemyButtonSprite;
     public Button button;
@@ -44,22 +48,30 @@ public class ChangingButton : MonoBehaviour
 
         if (isYourTurn == true && isEnemyTurn == false)
         {
-            playerPanel.SetActive(true);
-            enemyPanel.SetActive(false);
+            //playerPanel.SetActive(true);
+            //enemyPanel.SetActive(false);
+            playerPanelTransition.SetBool("IsPlayerPanelOpened", true);
+            enemyPanelTransition.SetBool("IsEnemyPanelOpened", false);
+
         }
         else
         {
-            playerPanel.SetActive(false);
-            enemyPanel.SetActive(true);
+            //playerPanel.SetActive(false);
+            //enemyPanel.SetActive(true);
+            playerPanelTransition.SetBool("IsPlayerPanelOpened", false);
+            enemyPanelTransition.SetBool("IsEnemyPanelOpened", true);
+
         }
 
         if(isShopOpened == false)
         {
-            shop.SetActive(false);
-            
-        }else if(isShopOpened == true)
+            shopTransition.SetBool("IsShopOpened", false);
+            //shop.SetActive(false);
+        }
+        else if(isShopOpened == true)
         {
-            shop.SetActive(true);
+            //shop.SetActive(true);
+            shopTransition.SetBool("IsShopOpened", true);
         }
     }
 
@@ -113,14 +125,12 @@ public class ChangingButton : MonoBehaviour
     public void ShopOpening()
     {
         if (isShopOpened == false)
-        {
+        {   
             isShopOpened = true;
-
         }
         else if (isShopOpened == true)
         {
             isShopOpened=false;
-
         }
 
     }
