@@ -7,7 +7,7 @@ public class MagazynDrewnaScript : MonoBehaviour
     ChangingButton button;
     Reso resources;
 
-    // Start is called before the first frame update
+    // Wood for one gold in shop
     void Start()
     {
         button = GameObject.FindGameObjectWithTag("TurnButton").GetComponent<ChangingButton>();

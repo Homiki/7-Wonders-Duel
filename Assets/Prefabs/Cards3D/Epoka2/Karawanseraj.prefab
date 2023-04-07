@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: -5964851342096961896}
   - component: {fileID: 7606116572296766112}
   - component: {fileID: 3285548806963476977}
+  - component: {fileID: -5320081042798779842}
   m_Layer: 0
   m_Name: Karawanseraj
   m_TagString: Untagged
@@ -278,3 +279,16 @@ CapsuleCollider:
   m_Height: 1.2
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0.46703982}
+--- !u!114 &-5320081042798779842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2310327870412080456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcf24b9c4d00784facdda80b36255c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeItemShop: {fileID: 3390765561226548432, guid: fe2f0de5d4ed2224ab60e1b1a7acacc8, type: 3}

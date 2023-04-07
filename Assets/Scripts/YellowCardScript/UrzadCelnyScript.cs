@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MagazynGlinyScript : MonoBehaviour
+public class UrzadCelnyScript : MonoBehaviour
 {
     ChangingButton button;
     Reso resources;
 
-    // Clay for one gold in store
+    // Glass and Papirus for one gold in shop
     void Start()
     {
         button = GameObject.FindGameObjectWithTag("TurnButton").GetComponent<ChangingButton>();
         resources = GameObject.FindGameObjectWithTag("Resources").GetComponent<Reso>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         PriceDiscount();
@@ -24,13 +24,17 @@ public class MagazynGlinyScript : MonoBehaviour
     {
         if (CompareTag("PlayerYellowDropped") && button.isYourTurn == true)
         {
-            resources.priceGlina = 1;
-            resources.glinaTextPrice.text = 1.ToString();
+            resources.priceGlass = 1;
+            resources.pricePapirus = 1;
+            resources.szkloTextPrice.text = 1.ToString();
+            resources.papirusTextPrice.text = 1.ToString();
         }
         else if (CompareTag("EnemyYellowDropped") && button.isEnemyTurn == true)
         {
-            resources.priceGlina = 1;
-            resources.glinaTextPrice.text = 1.ToString();
+            resources.priceGlass = 1;
+            resources.pricePapirus = 1;
+            resources.szkloTextPrice.text = 1.ToString();
+            resources.papirusTextPrice.text = 1.ToString();
         }
     }
 }

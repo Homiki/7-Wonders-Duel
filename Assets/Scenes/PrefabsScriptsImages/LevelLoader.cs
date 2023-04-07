@@ -7,6 +7,8 @@ public class LevelLoader : MonoBehaviour
 {
     Reso resources;
 
+    public GameObject freeItemShop;
+
     public Animator transition;
 
     public float transitionTime = 1f;
@@ -17,6 +19,7 @@ public class LevelLoader : MonoBehaviour
     {
         //resources = GameObject.FindGameObjectWithTag("Resources").GetComponent<Reso>();
         cardsRemaining = 20;
+        freeItemShop = GameObject.Find("FreeItems");
     }
 
     void Update()
@@ -29,6 +32,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        freeItemShop.SetActive(true);
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         //StartCoroutine(LoadLevel(SceneManager.LoadScene(2)));
     }
@@ -36,6 +40,8 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadLevel(int levelIndex)
     {
         //yield return new WaitForSeconds(transitionTime);
+
+
 
         transition.SetTrigger("Start");
 
