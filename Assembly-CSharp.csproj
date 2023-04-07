@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Reso.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\Scripts\YellowCardScript\ForumScript.cs" />
     <Compile Include="Assets\Scripts\DragNDropExamples\DraggableObject.cs" />
     <Compile Include="Assets\Scripts\DragNDropExamples\DropZone.cs" />
     <Compile Include="Assets\Scripts\PawnScript\LeftCoinDeleter.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\YellowCardScript\MagazynGlinyScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Scripts\YellowCardScript\KarawanserajScript.cs" />
     <Compile Include="Assets\Scripts\ButtonScripts\IsYourTurn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Scripts\PawnScript\RightCoinDeleter.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Assets\Scripts\ButtonScripts\DrewnoBuyButton.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\ButtonScripts\GlinaBuyButton.cs" />
+    <Compile Include="Assets\Scripts\YellowCardScript\UrzadCelnyScript.cs" />
     <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\DiscardCard.cs" />
     <Compile Include="Assets\Scripts\DragNDropExamples\DragDropZone.cs" />
@@ -126,6 +129,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples _ Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\FreeItemShopController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
