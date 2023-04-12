@@ -17,6 +17,9 @@ public class ChangingButton : MonoBehaviour
 
     public GameObject shop;
 
+    public FreeItemsBuy karawanserajFreeItems;
+    public FreeItemsBuy forumFreeItems;
+
     public bool isYourTurn;
     public bool isEnemyTurn;
 
@@ -105,6 +108,9 @@ public class ChangingButton : MonoBehaviour
             boughtKamien = 0;
             boughtPapirus = 0;
             boughtSzklo = 0;
+
+            forumFreeItems.forumItemCounter = 1;
+            karawanserajFreeItems.karawanserajItemCounter = 1;
         }
         else if (isYourTurn == false && isEnemyTurn == true)
         {
@@ -119,6 +125,9 @@ public class ChangingButton : MonoBehaviour
             boughtKamien = 0;
             boughtPapirus = 0;
             boughtSzklo = 0;
+
+            forumFreeItems.forumItemCounter = 1;
+            karawanserajFreeItems.karawanserajItemCounter = 1;
         }
     }
 

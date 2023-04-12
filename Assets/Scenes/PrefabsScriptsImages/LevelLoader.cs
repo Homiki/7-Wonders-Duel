@@ -7,7 +7,12 @@ public class LevelLoader : MonoBehaviour
 {
     Reso resources;
 
-    public GameObject freeItemShop;
+    GameObject freeItemShop;
+    GameObject freeGlina;
+    GameObject freeDrewno;
+    GameObject freeKamien;
+    GameObject freePapirus;
+    GameObject freeSzklo;
 
     public Animator transition;
 
@@ -19,7 +24,19 @@ public class LevelLoader : MonoBehaviour
     {
         //resources = GameObject.FindGameObjectWithTag("Resources").GetComponent<Reso>();
         cardsRemaining = 20;
+        freeGlina = GameObject.Find("FreeGlina");
+        freeDrewno = GameObject.Find("FreeDrewno");
+        freeKamien = GameObject.Find("FreeKamien");
+        freePapirus = GameObject.Find("FreePapirus");
+        freeSzklo = GameObject.Find("FreeSzklo");
         freeItemShop = GameObject.Find("FreeItems");
+       
+        //freeItemShop.SetActive(false);
+        //freeGlina.SetActive(false);
+        //freeDrewno.SetActive(false);
+        //freeKamien.SetActive(false);
+        //freePapirus.SetActive(false);
+        //freeSzklo.SetActive(false);
     }
 
     void Update()
@@ -32,8 +49,13 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        freeItemShop.SetActive(true);
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        freeItemShop.SetActive(true);
+        freeGlina.SetActive(true);
+        freeDrewno.SetActive(true);
+        freeKamien.SetActive(true);
+        freePapirus.SetActive(true);
+        freeSzklo.SetActive(true);
         //StartCoroutine(LoadLevel(SceneManager.LoadScene(2)));
     }
 

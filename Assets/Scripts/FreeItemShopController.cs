@@ -10,7 +10,8 @@ public class FreeItemShopController : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(false);
+        StartCoroutine(Deactivator());
+        
         //if (SceneManager.GetActiveScene().buildIndex == 1)
         //{
         //    gameObject.SetActive(false);
@@ -29,5 +30,11 @@ public class FreeItemShopController : MonoBehaviour
         //{
         //    gameObject.SetActive(true);
         //}
+    }
+
+    IEnumerator Deactivator()
+    {
+        yield return new WaitForSeconds(1);
+        gameObject.SetActive(false);
     }
 }
