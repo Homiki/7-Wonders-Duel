@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7231386653782479738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7231386653782479737}
+  - component: {fileID: 7231386653782479736}
+  m_Layer: 0
+  m_Name: ResourcesController
+  m_TagString: Resources
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7231386653782479737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231386653782479738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 394.3065, y: 1007.4971, z: 0.43997192}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7231386653782479736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231386653782479738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40c061a1ebd2ac4ba03b2742de9a310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textGold: {fileID: 0}
+  textGlina: {fileID: 0}
+  textWood: {fileID: 0}
+  textStone: {fileID: 0}
+  textGlass: {fileID: 0}
+  textPapirus: {fileID: 0}
+  textPZ: {fileID: 0}
+  enemyTextGold: {fileID: 0}
+  enemyTextGlina: {fileID: 0}
+  enemyTextWood: {fileID: 0}
+  enemyTextStone: {fileID: 0}
+  enemyTextGlass: {fileID: 0}
+  enemyTextPapirus: {fileID: 0}
+  enemyTextPZ: {fileID: 0}
+  glinaTextPrice: {fileID: 0}
+  drewnoTextPrice: {fileID: 0}
+  kamienTextPrice: {fileID: 0}
+  papirusTextPrice: {fileID: 0}
+  szkloTextPrice: {fileID: 0}
+  gold: 0
+  glina: 0
+  wood: 0
+  stone: 0
+  glass: 0
+  papirus: 0
+  PZ: 0
+  military: 0
+  enemyGold: 0
+  enemyGlina: 0
+  enemyWood: 0
+  enemyStone: 0
+  enemyGlass: 0
+  enemyPapirus: 0
+  enemyPZ: 0
+  enemyMilitary: 0
+  priceGlina: 0
+  priceWood: 0
+  priceStone: 0
+  priceGlass: 0
+  pricePapirus: 0
+  militaryToken: 0
+  playerYellowQuantity: 0
+  enemyYellowQuantity: 0
+  button: {fileID: 0}
+  cardsRemaining: 0
