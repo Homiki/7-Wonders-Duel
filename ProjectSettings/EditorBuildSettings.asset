@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Epoka2.unity
     guid: 291515cbf3dacbc4a944946a45958ff7
+  - enabled: 1
+    path: Assets/Scenes/Epoka3.unity
+    guid: 8855d382fb6afc44c88ed5e10bb2b0d8
   m_configObjects: {}
