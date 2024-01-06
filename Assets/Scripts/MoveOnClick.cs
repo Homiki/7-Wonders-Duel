@@ -440,6 +440,7 @@ public class MoveOnClick : MonoBehaviour
         {
             t.gameObject.tag = "EnemyYellowDropped";
             //moveonclick.enabled = false;
+
         }
     }
 }
